@@ -6,12 +6,11 @@
 /*   By: ybenchel <ybenchel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 09:09:26 by ybenchel          #+#    #+#             */
-/*   Updated: 2024/10/29 10:18:56 by ybenchel         ###   ########.fr       */
+/*   Updated: 2024/10/29 10:16:55 by ybenchel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static int	get_num_len(int n)
 {
@@ -52,13 +51,4 @@ char	*ft_itoa(int n)
 		num /= 10;
 	}
 	return (str);
-}
-
-
-int main()
-{
-	int num = 12345;
-	char *str = ft_itoa(num);
-	printf("%s", str);
-	free(str);
 }

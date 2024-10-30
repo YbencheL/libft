@@ -6,7 +6,7 @@
 /*   By: ybenchel <ybenchel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:56:21 by ybenchel          #+#    #+#             */
-/*   Updated: 2024/10/28 11:35:37 by ybenchel         ###   ########.fr       */
+/*   Updated: 2024/10/30 11:25:29 by ybenchel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,6 @@ int	ft_atoi(const char *str)
 			sign = -1;
 		i++;
 	}
-	if (str[i] == '+' || str[i] == '-')
-		return (0);
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		result *= 10;
@@ -39,4 +37,3 @@ int	ft_atoi(const char *str)
 	}
 	return (result * sign);
 }
-

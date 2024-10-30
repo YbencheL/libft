@@ -1,34 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstmap.c                                        :+:      :+:    :+:   */
+/*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ybenchel <ybenchel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/27 14:14:27 by ybenchel          #+#    #+#             */
-/*   Updated: 2024/10/27 14:17:01 by ybenchel         ###   ########.fr       */
+/*   Created: 2024/10/30 12:04:21 by ybenchel          #+#    #+#             */
+/*   Updated: 2024/10/30 12:04:22 by ybenchel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+static void	lstmap_cleanup(t_list **new_lst, void (*del)(void *))
+{
+	ft_lstclear(new_lst, del);
+}
+
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new_lst;
 	t_list	*temp;
+	void	*content;
 
-	if (!lst || !f)
+	new_lst = NULL;
+	if (!lst || !f || !del)
 		return (NULL);
-	new_lst = ft_lstnew(f(lst->content));
-	if (!new_lst)
-		return (NULL);
-	lst = lst->next;
 	while (lst)
 	{
-		temp = ft_lstnew(f(lst->content));
+		content = f(lst->content);
+		temp = ft_lstnew(content);
 		if (!temp)
 		{
-			ft_lstclear(&new_lst, del);
+			if (content)
+				del(content);
+			lstmap_cleanup(&new_lst, del);
 			return (NULL);
 		}
 		ft_lstadd_back(&new_lst, temp);
