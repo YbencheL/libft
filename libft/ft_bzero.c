@@ -6,7 +6,7 @@
 /*   By: ybenchel <ybenchel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 10:55:01 by ybenchel          #+#    #+#             */
-/*   Updated: 2024/10/25 14:58:53 by ybenchel         ###   ########.fr       */
+/*   Updated: 2024/11/03 16:04:45 by ybenchel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,12 @@ void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, 0, n);
 }
+
+/*
+int main()
+{
+	char str[] = "Hello World";
+	ft_bzero(str + 5,5);
+	printf("after bzero: %s\n",str);
+}
+*/

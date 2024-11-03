@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ybenchel <ybenchel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 13:16:32 by ybenchel          #+#    #+#             */
-/*   Updated: 2024/10/27 13:45:02 by ybenchel         ###   ########.fr       */
+/*   Updated: 2024/11/03 17:19:51 by ybenchel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,18 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (i);
 }
+
+/*
+int main()
+{
+	    t_list *head = NULL;
+
+    ft_lstadd_back(&head, ft_lstnew("hello world"));
+    ft_lstadd_back(&head, ft_lstnew("this is"));
+    ft_lstadd_back(&head, ft_lstnew("42 school"));
+
+    printf("%d\n", ft_lstsize(head));
+
+    return 0;
+}
+ */

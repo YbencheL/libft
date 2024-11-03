@@ -6,7 +6,7 @@
 /*   By: ybenchel <ybenchel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 11:44:38 by ybenchel          #+#    #+#             */
-/*   Updated: 2024/10/27 14:20:07 by ybenchel         ###   ########.fr       */
+/*   Updated: 2024/11/03 16:04:34 by ybenchel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdio.h>
+# include <limits.h>
 
 typedef struct s_list
 {

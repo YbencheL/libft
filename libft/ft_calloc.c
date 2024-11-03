@@ -26,3 +26,20 @@ void	*ft_calloc(size_t count, size_t size)
 	ft_memset(ptr, 0, total_size);
 	return (ptr);
 }
+
+/*
+int main()
+{
+    size_t count = 5;
+    size_t size = sizeof(int);
+    size_t *array = ft_calloc(count, size);
+    
+    for(int i = 0; i < count; i++)
+    {
+	printf("%zu\n", array[i]);
+    }
+
+    free(array);
+    return 0;
+}
+*/

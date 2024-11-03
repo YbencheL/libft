@@ -6,7 +6,7 @@
 /*   By: ybenchel <ybenchel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:56:21 by ybenchel          #+#    #+#             */
-/*   Updated: 2024/10/30 11:25:29 by ybenchel         ###   ########.fr       */
+/*   Updated: 2024/11/03 16:05:57 by ybenchel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,13 @@ int	ft_atoi(const char *str)
 	}
 	return (result * sign);
 }
+
+/*
+int main()
+{
+	char str[] = "2147483647";
+	printf("myfunc: %d\n", ft_atoi(str));
+	printf("manfunc: %d\n", atoi(str));
+	return 0;
+}
+*/

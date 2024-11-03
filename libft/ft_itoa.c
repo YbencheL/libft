@@ -6,7 +6,7 @@
 /*   By: ybenchel <ybenchel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 09:09:26 by ybenchel          #+#    #+#             */
-/*   Updated: 2024/10/29 10:16:55 by ybenchel         ###   ########.fr       */
+/*   Updated: 2024/11/03 16:05:52 by ybenchel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,3 +52,11 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
+
+/*
+int main()
+{
+	int arr = -2147483648;
+	printf("int as string: %s", ft_itoa(arr));
+}
+*/

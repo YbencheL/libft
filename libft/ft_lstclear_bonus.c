@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear.c                                      :+:      :+:    :+:   */
+/*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ybenchel <ybenchel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 14:11:09 by ybenchel          #+#    #+#             */
-/*   Updated: 2024/10/27 14:17:41 by ybenchel         ###   ########.fr       */
+/*   Updated: 2024/11/03 16:41:09 by ybenchel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,21 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	}
 	*lst = NULL;
 }
+
+/*
+int main()
+{
+    t_list *head = NULL;
+
+    ft_lstadd_back(&head, ft_lstnew(ft_strdup("mr hanckey")));
+    ft_lstadd_back(&head, ft_lstnew(ft_strdup("the chrismas")));
+    ft_lstadd_back(&head, ft_lstnew(ft_strdup("poo")));
+
+    ft_lstclear(&head, free);
+
+    if (head == NULL)
+    {
+        printf("nothing to see here");
+    }
+}
+*/
