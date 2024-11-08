@@ -6,7 +6,7 @@
 /*   By: ybenchel <ybenchel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 15:02:02 by ybenchel          #+#    #+#             */
-/*   Updated: 2024/11/03 11:17:58 by ybenchel         ###   ########.fr       */
+/*   Updated: 2024/11/07 14:18:46 by ybenchel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,11 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+
+/*
+int main()
+{
+	char str[] = "hello world";
+	printf("%s", ft_memchr(str, 'w', 10));
+}
+*/

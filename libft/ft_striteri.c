@@ -6,7 +6,7 @@
 /*   By: ybenchel <ybenchel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 15:24:33 by ybenchel          #+#    #+#             */
-/*   Updated: 2024/10/25 15:24:57 by ybenchel         ###   ########.fr       */
+/*   Updated: 2024/11/04 10:30:23 by ybenchel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,16 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
+
+/*
+void print_with_index(unsigned int i, char *c)
+{
+    printf("index[%d]: %c\n", i, *c);
+}
+
+int main()
+{
+	char str[] = "hello world";
+	ft_striteri(str, print_with_index);
+}
+*/

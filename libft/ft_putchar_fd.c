@@ -6,7 +6,7 @@
 /*   By: ybenchel <ybenchel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 16:40:41 by ybenchel          #+#    #+#             */
-/*   Updated: 2024/11/03 16:07:26 by ybenchel         ###   ########.fr       */
+/*   Updated: 2024/11/06 15:36:06 by ybenchel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,16 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
+	if (fd < 0)
+		return ;
 	write(fd, &c, 1);
 }
 
 /*
 int main()
 {
-	int fd = open("test.txt", O_WRONLY | O_APPEND);
-		ft_putchar_fd('d',fd);
-	close(fd);
+	//int fd = open("test.txt", O_WRONLY | O_APPEND);
+		ft_putchar_fd('d',-5);
+	//close(fd);
 }
-ß*/
+*/

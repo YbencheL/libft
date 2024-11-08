@@ -6,7 +6,7 @@
 /*   By: ybenchel <ybenchel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 11:16:30 by ybenchel          #+#    #+#             */
-/*   Updated: 2024/11/03 16:05:33 by ybenchel         ###   ########.fr       */
+/*   Updated: 2024/11/07 12:42:18 by ybenchel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,14 +92,25 @@ char	**ft_split(char const *s, char c)
 /*
 int main()
 {
-	char str[] = "hello world is me";
-	char **result;
-	result = ft_split(str, ' ');
-	for(int i = 0;result[i] != NULL; i++)
-	{
-		printf("%s\n",result[i]);
-		free(result[i]);
-	}
-	free(result);
+    char str[] = "hello world is me";
+    char **result;
+
+    result = ft_split(NULL, ' ');
+    if (!result)
+    {
+        printf("Error\n");
+        return 1;
+    }
+    else
+    {
+    	result = ft_split(str, ' ');
+    	for (int i = 0; result[i] != NULL; i++)
+    	{
+        	printf("%s\n", result[i]);
+        	free(result[i]);
+    	}
+    	free(result);
+    }
+    return 0;
 }
 */

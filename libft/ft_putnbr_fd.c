@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fr.c                                     :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ybenchel <ybenchel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 15:39:23 by ybenchel          #+#    #+#             */
-/*   Updated: 2024/10/25 15:43:19 by ybenchel         ###   ########.fr       */
+/*   Updated: 2024/11/04 10:00:14 by ybenchel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,13 @@ void	ft_putnbr_fd(int n, int fd)
 	else
 		ft_putchar_fd(n + '0', fd);
 }
+
+/*
+#include <fcntl.h>
+int main()
+{
+	int fd = open("test.txt", O_WRONLY | O_CREAT | O_TRUNC, 0777);
+		ft_putnbr_fd(-123,fd);
+	close(fd);
+}
+*/

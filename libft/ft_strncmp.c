@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ybenchel <ybenchel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 14:47:17 by ybenchel          #+#    #+#             */
-/*   Updated: 2024/10/22 17:15:07 by ybenchel         ###   ########.fr       */
+/*   Created: 2024/11/04 19:17:22 by ybenchel          #+#    #+#             */
+/*   Updated: 2024/11/05 20:44:22 by ybenchel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,11 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
+
+/*int main()
+{
+	char *s1 = "Hello\0hello";
+	char *s2 = "Hellohelli\0";
+	printf("%d\n", ft_strncmp(s1, s2, 12));
+	return (0);
+}*/

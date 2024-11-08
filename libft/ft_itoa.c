@@ -6,7 +6,7 @@
 /*   By: ybenchel <ybenchel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 09:09:26 by ybenchel          #+#    #+#             */
-/*   Updated: 2024/11/03 16:05:52 by ybenchel         ###   ########.fr       */
+/*   Updated: 2024/11/07 10:01:51 by ybenchel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,24 +31,24 @@ char	*ft_itoa(int n)
 {
 	char	*str;
 	int		len;
-	long	num;
 
-	num = n;
+	if (n == INT_MIN)
+		return (ft_strdup("-2147483648"));
 	len = get_num_len(n);
 	str = (char *)ft_calloc(len + 1, sizeof(char));
 	if (!str)
 		return (NULL);
-	if (num == 0)
+	if (n == 0)
 		str[0] = '0';
-	if (num < 0)
+	if (n < 0)
 	{
 		str[0] = '-';
-		num = -num;
+		n = -n;
 	}
-	while (num > 0)
+	while (n > 0)
 	{
-		str[--len] = (num % 10) + '0';
-		num /= 10;
+		str[--len] = (n % 10) + '0';
+		n /= 10;
 	}
 	return (str);
 }
@@ -56,7 +56,7 @@ char	*ft_itoa(int n)
 /*
 int main()
 {
-	int arr = -2147483648;
+	int arr = 2147483647;
 	printf("int as string: %s", ft_itoa(arr));
 }
 */

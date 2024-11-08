@@ -6,7 +6,7 @@
 /*   By: ybenchel <ybenchel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 11:44:38 by ybenchel          #+#    #+#             */
-/*   Updated: 2024/11/03 16:04:34 by ybenchel         ###   ########.fr       */
+/*   Updated: 2024/11/06 18:13:19 by ybenchel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ typedef struct s_list
 }					t_list;
 
 int					ft_atoi(const char *str);
-int					ft_strlen(const char *str);
+size_t				ft_strlen(const char *s);
 char				*ft_strdup(const char *str);
 int					ft_isalpha(int c);
 int					ft_isdigit(int c);

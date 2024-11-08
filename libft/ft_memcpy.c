@@ -6,7 +6,7 @@
 /*   By: ybenchel <ybenchel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 21:03:19 by ybenchel          #+#    #+#             */
-/*   Updated: 2024/10/28 10:46:02 by ybenchel         ###   ########.fr       */
+/*   Updated: 2024/11/07 12:44:09 by ybenchel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,9 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
+
+// int main()
+// {
+// 	char dst[] = "abcdef";
+// 	printf("%s",ft_memcpy(dst + 2,dst,4));
+// }

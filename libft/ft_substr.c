@@ -6,7 +6,7 @@
 /*   By: ybenchel <ybenchel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 14:34:42 by ybenchel          #+#    #+#             */
-/*   Updated: 2024/10/28 10:42:57 by ybenchel         ###   ########.fr       */
+/*   Updated: 2024/11/05 21:51:26 by ybenchel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,13 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	str[i] = '\0';
 	return (str);
 }
+
+/*
+int main()
+{
+	char str[] = "hello world its me 42";
+	char *res = ft_substr(str, 0, 5);
+	
+	printf("%s", res);
+}
+*/
